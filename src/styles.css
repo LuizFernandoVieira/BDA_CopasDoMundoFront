@@ -1,1 +1,222 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/*
+ * Globals
+ */
+
+.app-root {
+  width: 100%;
+}
+
+html,
+body {
+  height: 100%;   
+  background-color: #333;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  outline: none;
+  box-shadow: none !important;
+  border: 2px solid white !important;
+}
+
+input[type="text"]:focus,
+input[type="text"]:visited,
+input[type="date"]:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+  box-shadow: none !important;
+  border: 2px solid rgb(113, 223, 190) !important;
+  background-color: #333;
+}
+
+button {
+  outline: none;
+  box-shadow: none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input:-webkit-autofill:visited {
+  -webkit-box-shadow: 0 0 0 30px #333 inset;
+  box-shadow: 0 0 0 30px #333 inset;
+}
+
+input:-webkit-autofill {  
+  -webkit-text-fill-color: rgb(113, 223, 190) !important;
+  border: 2px solid rgb(113, 223, 190) !important;
+}
+
+.cover-container {
+  max-width: 70%;
+}
+
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+td a:hover {
+  color: rgb(113, 223, 190);
+}
+
+.fas {
+  padding-right: 6px;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+.btn-default {  
+  color: rgb(113, 223, 190);
+  background-color: #333;
+  border: 2px solid rgb(113, 223, 190);
+}
+
+.btn-default:hover {
+  color: #333;
+  background-color: rgb(113, 223, 190);
+}
+
+
+/*
+* Header
+*/
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: #fff;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  color: rgb(113, 223, 190);
+  border-bottom-color: rgb(113, 223, 190);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: rgb(113, 223, 190);
+  border-bottom-color: rgb(113, 223, 190);
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+
+  .nav-masthead {
+    float: right;
+  }
+}
+
+/*
+* Cover
+*/
+
+.cover {
+  padding: 0 1.5rem;
+}
+
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+/*
+* Footer
+*/
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
+
+/*
+*  Others
+*/
+
+.form-control {
+  background-color: #333;
+  border: 2px solid white;  
+  color: white;
+}
+
+.form-control:active,
+.form-control:focus {
+  background-color: #333;
+  border: 2px solid rgb(113, 223, 190);  
+  color: white;  
+}
+
+.selectpicker {
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  background-color: #333;
+  border: 2px solid white;
+  color: white;
+  text-transform: none;
+}
+
+.selectpicker:active,
+.selectpicker:focus {
+  border: 2px solid rgb(113, 223, 190);  
+}
+
+.page-link {
+  background-color: #333;
+  color: rgb(113, 223, 190);
+}
+
+.page-item.active .page-link {
+  background-color: rgb(113, 223, 190);
+  color: #333;
+  border-color: rgb(113, 223, 190);
+}
+
+.page-item.disabled .page-link {
+  background-color: rgb(51, 51, 51);
+  color: rgb(113, 223, 190);  
+}
+
+.page-item .page-link:hover,
+.page-item .page-link:focus {
+  background-color: rgb(113, 223, 190);
+  color: #333;
+}
